@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Print Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍️ Custom Print Store</h1>
+</header>
+
+<section class="products">
+    <h2>Products</h2>
+
+    <div class="product">
+        <h3>T-Shirt (Custom Print)</h3>
+        <input type="text" id="tshirtText" placeholder="Enter print text">
+        <button onclick="addToCart('Custom T-Shirt')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Pants</h3>
+        <button onclick="addToCart('Pants')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <h3>Jewellery</h3>
+        <button onclick="addToCart('Jewellery')">Add to Cart</button>
+    </div>
+</section>
+
+<section class="cart">
+    <h2>🛒 Cart</h2>
+    <ul id="cartList"></ul>
+    <button onclick="placeOrder()">Place Order</button>
+</section>
+
+<section class="tracking" id="tracking">
+    <h2>🚚 Order Tracking</h2>
+    <p id="status">Order not placed</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
